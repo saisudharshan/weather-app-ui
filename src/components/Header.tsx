@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import '../App.css'
 export interface cordd {
 lon: string;
 lat: string
@@ -35,12 +36,12 @@ const Header = (props: LayoutProps) => {
       </div>
       <div style={{ margin: "2%" }}>
         <input
-          style={{ lineHeight: "40px" }}
+          style={{ lineHeight: "40px", borderColor: "orange", borderRadius: 1 }}
           placeholder="City..."
           onChange={handleChange}
           value={city}
         />
-        <button style={{ lineHeight: "30px" }} onClick={handleClick}>
+        <button style={{ lineHeight: "30px", borderColor: "orange", borderRadius: 1 }} onClick={handleClick}>
           Search
         </button>
       </div>
