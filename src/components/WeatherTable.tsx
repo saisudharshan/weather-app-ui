@@ -14,7 +14,7 @@ const WeatherTable = (props: LayoutProps) => {
               <th colSpan={2} style={{background: "orange", color: "black"}}> Date: {d.dt_txt.split(" ")[0]}</th>
             </tr>
             <tr>
-              <th colSpan={2} style={{background: "orange", color: "black"}}> time: {d.dt_txt.split(" ")[1]}</th>
+              <th colSpan={2} style={{background: "orange", color: "black"}}> Time: {d.dt_txt.split(" ")[1]}</th>
             </tr>
             <tr style={{background: "grey", color: "black"}}>
               <th colSpan={2}>Temperature</th>
@@ -29,11 +29,11 @@ const WeatherTable = (props: LayoutProps) => {
             </tr>
             <tr >
               <th>Pressure</th>
-              <th>{d.main.pressure}</th>
+              <th>{d.main.pressure} hPa</th>
             </tr>
             <tr>
               <th>Humidity</th>
-              <th>{d.main.humidity}</th>
+              <th>{d.main.humidity} %</th>
             </tr>
           </table>
           

@@ -32,7 +32,7 @@ const Header = (props: LayoutProps) => {
   return (
     <>
       <div style={{ margin: 10 }}>
-        <h2>Weather in your City</h2>
+        <h1>Weather in your City</h1>
       </div>
       <div style={{ margin: "2%" }}>
         <input
