@@ -47,6 +47,7 @@ table {
 td, th {
   border: 1px solid black;
   text-align: center;
+  padding: 8px;
 }
 @media (max-width: 800px) {
   .App-header{
