@@ -63,6 +63,16 @@ button[disabled]{
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .App-header{
+    flex-direction: column;
+  }
+  .table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
