@@ -34,7 +34,7 @@ const Header = (props: LayoutProps) => {
       <div style={{ margin: 10 }}>
         <h1>Weather in your City</h1>
       </div>
-      <div style={{ margin: "2%", marginTop: "3%" }}>
+      <div style={{ margin: "2%" }}>
         <input
           style={{ lineHeight: "40px", borderColor: "orange", borderRadius: 1 }}
           placeholder="City..."
