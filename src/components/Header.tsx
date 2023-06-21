@@ -12,7 +12,7 @@ const Header = (props: LayoutProps) => {
   const [city, setCity] = useState("");
 
   const handleChange = (e: any) => {
-    setCity(e.target.value);
+    setCity(e.target.value.trim());
   };
   const fetchCity = () => {
     axios
@@ -41,7 +41,7 @@ const Header = (props: LayoutProps) => {
           onChange={handleChange}
           value={city}
         />
-        <button style={{ lineHeight: "30px", borderColor: "orange", borderRadius: 1 }} onClick={handleClick}>
+        <button style={{ lineHeight: "30px", borderColor: "orange", borderRadius: 1 }} onClick={handleClick} disabled={city == "" || undefined ? true : false }>
           Search
         </button>
       </div>
